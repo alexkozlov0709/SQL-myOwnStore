@@ -1,0 +1,21 @@
+CREATE TABLE ownstore (id INTEGER PRIMARY KEY , name TEXT, tall INTEGER, weight REAL, price INTEGER);
+
+INSERT INTO ownstore VALUES(1, "longboard", 30, 5, 100);
+INSERT INTO ownstore VALUES(2, "cruiser", 20, 3, 150);
+INSERT INTO ownstore VALUES(3, "skateboard", 25, 4, 100);
+INSERT INTO ownstore VALUES(4, "mountainboard", 40, 6, 100);
+INSERT INTO ownstore VALUES(5, "snowboard", 50, 7, 200);
+INSERT INTO ownstore VALUES(6, "fingerboard", 5, 1, 50);
+INSERT INTO ownstore VALUES(7, "washboard", 10, 2, 100);
+INSERT INTO ownstore VALUES(8, "wakeboard", 20, 3, 100);
+INSERT INTO ownstore VALUES(9, "pennyboard", 10, 2, 100);
+INSERT INTO ownstore VALUES(10, "childboard", 5, 1, 100);
+INSERT INTO ownstore VALUES(11, "boyboard", 10, 2, 100);
+INSERT INTO ownstore VALUES(12, "girlboard", 8, 2, 100);
+INSERT INTO ownstore VALUES(13, "manboard", 15, 3, 100);
+INSERT INTO ownstore VALUES(14, "womanboard", 12, 2, 100);
+INSERT INTO ownstore VALUES(15, "uncleboard", 15, 3, 100);
+
+SELECT * FROM ownstore; SELECT * FROM ownstore ORDER BY price;
+
+SELECT SUM(price) FROM ownstore;
